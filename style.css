@@ -1,0 +1,117 @@
+/*Device screen width lol*/
+#container {
+    display: block;
+    width: 100%;
+    background-color: paleturquoise;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+    #container {
+        max-width: 375px;
+        margin: 20px 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        max-width: 768px;
+        margin: 20px 40px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #container {
+        max-width: 1920px;
+        margin: 20px 40px;
+    }
+}
+
+/*layout*/
+#hero {
+    margin-bottom: 80px;
+}
+#content {
+    padding: 20px;
+    margin-bottom: 80px;
+}
+#footer {
+    margin-bottom: 80px;
+}
+hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+/*User component*/
+#menu {
+    /*Utilities*/
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    /*Fonts*/
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-size: 25px;
+    color: cornsilk;
+    text-decoration: none;
+}
+#menu > * {
+    padding: 0 20px;
+}
+#menu > .items {
+    text-decoration: none;
+    color: inherit;
+}
+#menu > .items:hover {
+    background-color: cornsilk;;
+    color: orangered;
+    opacity: 35%;
+    border-radius: 20px;
+}
+
+#account {
+    display: inline-block;
+    position: relative;
+    
+}
+#OtherApps {
+    display: inline-block;
+    position: relative;
+    
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 80px;
+    padding: 0 20px;
+    margin: auto;
+    z-index: 1;
+  }
+
+#account:active > .dropdown{
+    display: block;
+}
+
+#OtherApps:active > .dropdown{
+    display: block;
+}
+
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: tomato;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/*Custom Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
