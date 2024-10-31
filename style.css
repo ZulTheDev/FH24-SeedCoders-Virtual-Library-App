@@ -47,7 +47,7 @@ hr {
 /*User component*/
 #menu {
     /*Utilities*/
-    display: inline-flex;
+    display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
     justify-content: center;
@@ -103,7 +103,7 @@ hr {
 }
 
 .card{
-    display: flex;
+    display: block;
     flex-flow: row wrap;
     width: 50px;
     height: 80px;
